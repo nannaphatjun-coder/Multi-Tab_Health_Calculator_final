@@ -1,5 +1,6 @@
 """
 This file contains static data used by the health calculator.
+It holds the dictionaries for food calories and activity levels.
 """
 
 # Dictionary of food items and their approximate calorie counts.
@@ -53,6 +54,4 @@ activity_levels = {
     "Moderately active (moderate exercise/sports 3-5 days/week)": 1.55,
     "Very active (hard exercise/sports 6-7 days a week)": 1.725,
     "Super active (very hard exercise/physical job)": 1.9,
-}
-
 }
