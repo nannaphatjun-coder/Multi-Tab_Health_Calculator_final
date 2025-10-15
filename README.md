@@ -2,6 +2,8 @@
 
 A user-friendly, all-in-one web application designed to help you track and manage key aspects of your health and fitness journey. This tool is built using Python and the Gradio library to provide a clean, interactive, multi-tab interface.
 
+An interactive health application for calculating BMI and tracking daily calories, created by Nannaphat Juntasaro 6813373 and Prawichta Saesow 6813378.
+
 
 
 ## ✨ Features
@@ -52,4 +54,16 @@ Make sure you have Python 3 installed on your system.
     ```bash
     python your_file_name.py
     ```
-3.  The application will start, and a local URL (e.g
+3.  The application will start, and a local URL (e.g., `http://127.0.0.1:7860`) will be displayed in the terminal. Open this URL in your web browser to use the calculator.
+
+## 📝 Code Overview
+
+The script is structured into three main parts:
+
+1.  **Data Dictionaries:**
+    * `food_calories`: A dictionary containing a wide range of food items and their corresponding calorie values.
+    * `activity_levels`: A dictionary that maps descriptive activity levels to their multiplier values for TDEE calculation.
+2.  **Calculation Logic:**
+    * Separate Python functions are defined for each calculation: `calculate_bmi`, `calculate_tdee`, and the food tracker functions (`add_food_to_log`, `reset_log`, `compare_calories`).
+3.  **Gradio Interface:**
+    * The main `gr.Blocks()` section defines the entire user interface, including the tabs, input fields (sliders, radio buttons, dropdowns), buttons, and output displays. It also handles all event listeners that connect the UI components to the backend logic.
