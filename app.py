@@ -14,4 +14,3 @@ if __name__ == "__main__":
     # Launch the application
     # Set share=False if you only want to run it locally.
     demo.launch()
-
